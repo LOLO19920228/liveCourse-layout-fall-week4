@@ -1,0 +1,809 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+* {
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*, *:before, *:after {
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.d-none {
+  display: none; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.justify-content-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.align-items-baseline {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.align-items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.align-self-center {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.align-self-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+.h-100 {
+  height: 100%; }
+
+.text-white {
+  color: white; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-justify {
+  text-align: justify; }
+
+.font-weight-regular {
+  font-weight: 400; }
+
+.font-weight-medium {
+  font-weight: 500; }
+
+.font-weight-bold {
+  font-weight: 700; }
+
+.font-weight-black {
+  font-weight: 900; }
+
+.font-italic {
+  font-style: italic; }
+
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400; }
+
+.font-Roboto {
+  font-family: "Roboto", sans-serif; }
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 690px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 345px; } }
+
+.pt-64 {
+  padding-top: 64px; }
+
+.pb-80 {
+  padding-bottom: 80px; }
+
+.mb-7 {
+  margin-bottom: 7px; }
+
+.mb-10 {
+  margin-bottom: 10px; }
+
+.mb-16 {
+  margin-bottom: 16px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-24 {
+  margin-bottom: 24px; }
+
+.mb-32 {
+  margin-bottom: 32px; }
+
+.mb-36 {
+  margin-bottom: 36px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
+.mb-60 {
+  margin-bottom: 60px; }
+
+.fz-14 {
+  font-size: 14px; }
+
+.fz-16 {
+  font-size: 16px; }
+
+.fz-20 {
+  font-size: 20px; }
+
+.fz-24 {
+  font-size: 24px; }
+
+.fz-28 {
+  font-size: 28px; }
+
+.fz-36 {
+  font-size: 36px; }
+
+.fz-48 {
+  font-size: 48px; }
+
+.fz-64 {
+  font-size: 64px; }
+
+.fz-72 {
+  font-size: 72px; }
+
+.bg-primary {
+  background: #aa0601; }
+
+.bg-light {
+  background: #fbf2f2; }
+
+.text-primary {
+  color: #650300; }
+
+.text-secondary {
+  color: #AA0601; }
+
+.text-lightDark {
+  color: #212529; }
+
+.text-light {
+  color: #707070; }
+
+.subtitle {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 90px; }
+  .subtitle img {
+    width: 57.9px;
+    margin-left: 24px; }
+  @media (max-width: 992px) {
+    .subtitle {
+      font-size: 48px;
+      line-height: 67px; }
+      .subtitle img {
+        width: 48px;
+        margin-left: 16px; } }
+  @media (max-width: 767px) {
+    .subtitle {
+      font-size: 28px;
+      line-height: 40px; }
+      .subtitle img {
+        width: 24px;
+        margin-left: 8px; } }
+
+.header {
+  padding: 0 56px; }
+  .header .menu a {
+    display: block;
+    padding: 40px 32px; }
+  .header .menu a:hover {
+    background-color: #650300; }
+  @media (max-width: 992px) {
+    .header .headerContainer {
+      max-width: 690px;
+      margin: 0 auto; } }
+  @media (max-width: 767px) {
+    .header {
+      padding: 0 0; }
+      .header .headerContainer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        max-width: 100%; }
+      .header h1 {
+        margin: 10px 0; }
+      .header .menu {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .header .menu li {
+          width: 50%;
+          border: 1px solid #fff; }
+        .header .menu li:nth-child(odd) {
+          border-left: none; }
+        .header .menu li:nth-child(even) {
+          border-right: none; }
+        .header .menu a {
+          text-align: center;
+          display: block;
+          padding: 8px 0; } }
+
+.footer {
+  padding: 32px 0 28px 0; }
+  .footer .footerMenu ul:first-child li {
+    margin-right: 48px; }
+  .footer .footerMenu ul:last-child li {
+    margin-left: 32px; }
+  .footer .footerContact .footerPhone img {
+    width: 44px;
+    height: 44px; }
+  .footer .footerContact .footerMail img {
+    width: 48px;
+    height: 48px; }
+  .footer .footerContact .footerPhone,
+  .footer .footerContact .footerMail {
+    position: relative;
+    margin-bottom: 20px; }
+  .footer .footerContact .footerPhone a,
+  .footer .footerContact .footerMail a {
+    position: absolute;
+    left: 65px; }
+  .footer .footerCopyright {
+    padding-top: 24px;
+    border-top: 1px solid #fff; }
+    .footer .footerCopyright .footerCopyrightText a {
+      margin-right: 38px; }
+    .footer .footerCopyright .copyrightMenu li {
+      margin-left: 62px; }
+  @media (max-width: 992px) {
+    .footer {
+      padding: 40px 0 40px 0; }
+      .footer .footerMenu ul:first-child li {
+        margin-right: 40px; }
+      .footer .footerMenu ul:last-child li {
+        margin-left: 24px; }
+      .footer .footerContact .footerPhone img {
+        width: 24px;
+        height: 24px; }
+      .footer .footerContact .footerMail img {
+        width: 32px;
+        height: 32px; }
+      .footer .footerContact .footerPhone,
+      .footer .footerContact .footerMail {
+        margin-bottom: 24px; }
+      .footer .footerContact .footerPhone a,
+      .footer .footerContact .footerMail a {
+        left: 40px;
+        font-size: 20px; }
+      .footer .footerCopyright .footerCopyrightText a {
+        display: none; }
+      .footer .footerCopyright .copyrightMenu li {
+        margin-left: 24px; } }
+  @media (max-width: 767px) {
+    .footer {
+      padding: 24px 0 20px 0; }
+      .footer .footerMenu {
+        display: none; }
+      .footer .footerContact {
+        position: relative; }
+        .footer .footerContact .footerPhone img {
+          width: 20px;
+          height: 20px; }
+        .footer .footerContact .footerMail img {
+          width: 20px;
+          height: 20px; }
+        .footer .footerContact .footerPhone {
+          margin-bottom: 8px; }
+        .footer .footerContact .footerMail {
+          margin-bottom: 24px; }
+        .footer .footerContact .footerPhone a,
+        .footer .footerContact .footerMail a {
+          left: 25px;
+          font-size: 16px; }
+        .footer .footerContact .mobileContactIcon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .footer .footerContact .mobileContactIcon li {
+            margin-left: 24px; }
+          .footer .footerContact .mobileContactIcon img {
+            width: 24px;
+            height: 24px; }
+      .footer .footerCopyright {
+        padding-top: 18px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        position: relative; }
+        .footer .footerCopyright .footerCopyrightText a {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          margin-right: 0; }
+        .footer .footerCopyright .copyrightMenu {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+        .footer .footerCopyright .copyrightMenu li {
+          margin-left: 0px;
+          margin-top: 8px; } }
+
+.indexBanner {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) center center no-repeat;
+  height: 840px; }
+  @media (max-width: 992px) {
+    .indexBanner h2 {
+      font-size: 48px; }
+      .indexBanner h2 span {
+        font-size: 20px; } }
+  @media (max-width: 767px) {
+    .indexBanner {
+      background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true) center center no-repeat;
+      background-size: cover;
+      height: 394px; }
+      .indexBanner h2 {
+        font-size: 32px;
+        line-height: 72px; }
+        .indexBanner h2 span {
+          font-size: 16px;
+          line-height: 30px; } }
+
+.indexPurpose li {
+  width: 20%; }
+  .indexPurpose li .glassesIcon {
+    height: 100px; }
+
+@media (max-width: 992px) {
+  .indexPurpose .container {
+    padding-top: 40px;
+    padding-bottom: 80px; }
+  .indexPurpose h3 {
+    font-size: 32px;
+    margin-bottom: 32px; }
+  .indexPurpose ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .indexPurpose ul li {
+      width: 35%; }
+      .indexPurpose ul li img {
+        width: 80px;
+        height: auto; }
+      .indexPurpose ul li h4 {
+        font-size: 20px; }
+      .indexPurpose ul li .glassesIcon {
+        height: 80px; }
+    .indexPurpose ul .indexPurposeClock {
+      -webkit-box-ordinal-group: -1;
+          -ms-flex-order: -2;
+              order: -2;
+      margin-bottom: 40px; }
+    .indexPurpose ul .indexPurposeHeart {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; } }
+
+@media (max-width: 767px) {
+  .indexPurpose .container {
+    padding-top: 32px;
+    padding-bottom: 52px; }
+  .indexPurpose h3 {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .indexPurpose ul li {
+    width: 65%; }
+    .indexPurpose ul li h4 {
+      font-size: 20px; }
+    .indexPurpose ul li .glassesIcon {
+      height: 80px; }
+  .indexPurpose ul .indexPurposeHeart {
+    margin-bottom: 40px; }
+  .indexPurpose ul .indexPurposeDollar {
+    margin-bottom: 40px; } }
+
+.indexClassic .classicTextMobile img,
+.indexClassic .classicTextMobile h4 {
+  display: none; }
+
+.indexClassic .classicOpticalImg {
+  width: 635px;
+  height: 320px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-1.png") center center no-repeat;
+  background-size: cover; }
+  .indexClassic .classicOpticalImg img {
+    margin-right: 8px; }
+
+.indexClassic .classicSunglassesImg {
+  width: 635px;
+  height: 320px;
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true") center center no-repeat;
+  background-size: cover; }
+  .indexClassic .classicSunglassesImg img {
+    margin-right: 8px; }
+
+.indexClassic .classicFunctionalImg {
+  width: 635px;
+  height: 320px;
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true") center center no-repeat;
+  background-size: cover; }
+  .indexClassic .classicFunctionalImg img {
+    margin-right: 8px; }
+
+.indexClassic .classicText {
+  margin: 0 30px; }
+  .indexClassic .classicText img {
+    margin-right: 8px; }
+
+@media (max-width: 992px) {
+  .indexClassic .container {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .indexClassic h3 {
+    font-size: 32px;
+    margin-bottom: 32px; }
+  .indexClassic .classicOpticalImg,
+  .indexClassic .classicSunglassesImg,
+  .indexClassic .classicFunctionalImg {
+    height: 168px;
+    width: 390px; }
+  .indexClassic li:nth-child(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .indexClassic li:not(:last-child) {
+    margin-bottom: 8px; }
+  .indexClassic .classicText h4 {
+    font-size: 28px; }
+  .indexClassic .classicText img {
+    width: 32px; } }
+
+@media (max-width: 767px) {
+  .indexClassic .container {
+    padding-top: 32px;
+    padding-bottom: 32px; }
+  .indexClassic h3 {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .indexClassic .classicTextMobile img,
+  .indexClassic .classicTextMobile h4 {
+    display: block; }
+  .indexClassic .classicText {
+    display: none; } }
+
+.indexJoint {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=truehttps://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) center center no-repeat;
+  background-size: cover; }
+  .indexJoint .jointDoubleA {
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=truehttps://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) center center no-repeat;
+    width: 540px;
+    height: 472px;
+    position: relative;
+    background-size: cover; }
+  .indexJoint .jointYouth {
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=truehttps://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) center center no-repeat;
+    width: 540px;
+    height: 472px;
+    position: relative;
+    background-size: cover; }
+  .indexJoint .jointBg {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%; }
+  .indexJoint .jointBg:hover {
+    opacity: 0; }
+  .indexJoint h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  @media (max-width: 992px) {
+    .indexJoint .container {
+      padding-top: 40px;
+      padding-bottom: 40px; }
+    .indexJoint h3 {
+      font-size: 32px;
+      margin-bottom: 32px; }
+    .indexJoint .jointDoubleA {
+      width: 330px;
+      height: 280px; }
+    .indexJoint .jointYouth {
+      width: 330px;
+      height: 280px; }
+    .indexJoint h4 {
+      font-size: 32px; } }
+  @media (max-width: 767px) {
+    .indexJoint .container {
+      padding-top: 32px;
+      padding-bottom: 32px; }
+    .indexJoint h3 {
+      font-size: 20px;
+      margin-bottom: 20px; }
+    .indexJoint ul {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .indexJoint .jointDoubleA {
+      width: 345px;
+      height: 284px;
+      margin-bottom: 16px; }
+    .indexJoint .jointYouth {
+      width: 345px;
+      height: 284px; }
+    .indexJoint h4 {
+      font-size: 32px; } }
+
+.indexCustomer li {
+  max-width: 255px; }
+  .indexCustomer li .customerCardContent {
+    padding: 14px 16px 16px 15px;
+    border: 1px solid #dee2e6;
+    border-top: none; }
+
+@media (max-width: 992px) {
+  .indexCustomer .container {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .indexCustomer h3 {
+    font-size: 32px;
+    margin-bottom: 32px; }
+  .indexCustomer ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .indexCustomer ul li {
+      max-width: 330px; }
+    .indexCustomer ul li:first-child {
+      margin-bottom: 28px; } }
+
+@media (max-width: 767px) {
+  .indexCustomer .container {
+    padding-top: 32px;
+    padding-bottom: 32px; }
+  .indexCustomer h3 {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .indexCustomer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .indexCustomer ul li {
+      max-width: 345px; }
+    .indexCustomer ul li:not(:last-child) {
+      margin-bottom: 16px; } }
+
+.indexContact .contactContainer {
+  max-width: 730px;
+  margin: 0 auto; }
+
+.indexContact input[type="text"], .indexContact textarea {
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border: 1px solid #000;
+  background-color: transparent; }
+
+.indexContact textarea {
+  resize: none;
+  height: 136px; }
+
+.indexContact input[type="checkbox"] + label {
+  display: block;
+  cursor: pointer;
+  padding-left: 4px;
+  margin-bottom: 42px; }
+
+.indexContact input[type="checkbox"] {
+  display: none; }
+
+.indexContact input[type=checkbox] + label::before {
+  content: "\2714";
+  border: 1px solid #000;
+  border-radius: 10%;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding-left: 4px;
+  margin-right: 8px;
+  color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer; }
+
+.indexContact input[type="checkbox"]:checked + label:before {
+  background-color: #AA0601;
+  border-color: #AA0601;
+  color: #fff; }
+
+.indexContact input[type="submit"] {
+  background: #AA0601;
+  padding: 16px 54px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none; }
+
+.indexContact input[type="submit"]:hover {
+  background: #650300; }
+
+@media (max-width: 992px) {
+  .indexContact .contactContainer {
+    max-width: 450px;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .indexContact h3 {
+    margin-bottom: 16px;
+    font-size: 32px; }
+  .indexContact p {
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .indexContact input[type="checkbox"] + label {
+    margin-bottom: 24px; } }
+
+@media (max-width: 767px) {
+  .indexContact .contactContainer {
+    max-width: 345px;
+    padding-top: 32px;
+    padding-bottom: 32px; }
+  .indexContact h3 {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .indexContact p {
+    margin-bottom: 8px; }
+  .indexContact input[type="checkbox"] + label {
+    margin-bottom: 24px; } }
+
+.faqBanner {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true) center center no-repeat;
+  height: 304px; }
+  @media (max-width: 992px) {
+    .faqBanner {
+      background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true) 35% center no-repeat; } }
+  @media (max-width: 767px) {
+    .faqBanner {
+      background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true) 25% center no-repeat;
+      height: 143px;
+      background-size: cover; } }
+
+.faqcontent {
+  padding-top: 80px;
+  padding-bottom: 304px; }
+  .faqcontent h3 {
+    font-size: 32px;
+    line-height: 45px; }
+  .faqcontent li h4 {
+    line-height: 28px; }
+  .faqcontent li p {
+    margin-left: 95px; }
+    .faqcontent li p .mobile-d {
+      display: none; }
+  .faqcontent li:not(:last-child) {
+    margin-bottom: 40px; }
+  @media (max-width: 992px) {
+    .faqcontent {
+      padding-top: 40px;
+      padding-bottom: 104px; }
+      .faqcontent h3 {
+        margin-bottom: 32px; }
+      .faqcontent li p {
+        margin-left: 54px; } }
+  @media (max-width: 767px) {
+    .faqcontent {
+      padding-top: 24px;
+      padding-bottom: 56px; }
+      .faqcontent h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 12px; }
+      .faqcontent li h4 {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 8px; }
+      .faqcontent li p {
+        margin-left: 0px;
+        font-size: 14px;
+        word-break: break-all; }
+        .faqcontent li p span {
+          display: none; }
+        .faqcontent li p .mobile-d {
+          display: block; }
+      .faqcontent li:not(:last-child) {
+        margin-bottom: 20px; } }
+
+/*# sourceMappingURL=all.css.map */
